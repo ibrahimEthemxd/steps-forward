@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İlerleyen Adımlar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      height: 80px;
+      padding: 10px 40px;
+      background-color: #333; /* Navbar arka plan rengi */
+      color: white;
+      font-size: 20px;
+    }
+
+    .navbar h1 {
+      color: #4caf50; /* Buton rengi */
+    }
+
+    .navbar .info {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .info p {
+      margin: 0;
+    }
+  </style>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h1>İEÖ</h1>
+      <div class="info">
+        <p>Hakkımızda</p>
+        <p>Hizmetler</p>
+        <p>İletişim</p>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle">1</div>
+        <div class="circle">2</div>
+        <div class="circle">3</div>
+        <div class="circle">4</div>
+      </div>
+
+      <button class="btn" id="prev" disabled>Önceki</button>
+      <button class="btn" id="next">Sonraki</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
